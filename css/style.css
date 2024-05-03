@@ -1,0 +1,224 @@
+:root {
+  --color-light-blue: rgb(60, 115, 251);
+  --color-dark-blue: rgb(41, 51, 67);
+  --color-light-gray: #b2b2b2;
+  --color-mid-gray: #7f7f7f;
+  --color-dark-gray: #59646b;
+  font-family: "Circular STD", "Monserrat", "Gotham", sans-serif;
+}
+
+.body {
+  background-color: var(--color-dark-blue);
+  color: white !important ;
+}
+
+.background-image img {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 667px;
+  z-index: -1;
+}
+
+.container {
+  padding: 0 8vw !important;
+}
+
+.navbar {
+  height: 100px;
+  position: relative;
+}
+
+
+.navbar-nav > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.brand {
+  font-weight: bold !important;
+  
+}
+
+#home-content {
+  padding: 20vh 0;
+}
+
+#home-title {
+  font-size: 3em;
+}
+
+#home-description {
+  font-size: 20px;
+}
+
+.btn.custom {
+  padding: 5px 25px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: "Circular STD", "Monserrat", "Gotham", sans-serif;
+}
+
+#learn-more {
+  border: 1px solid;
+}
+
+.services .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-cards {
+  margin-bottom: -50px;
+}
+.card {
+  border-radius: 1% !important;
+  padding: 0% !important;
+  text-align: center;
+  width: 330px !important;
+  margin: auto;
+}
+
+.card-text {
+  font-size: 16px;
+  height: 180px;
+  overflow: auto;
+}
+
+.card .btn.custom {
+  font-size: 13px;
+}
+
+.icon {
+  background-color: var(--color-light-blue);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.icon > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.3));
+}
+
+.container-fluid.technology {
+  background-color: var(--color-light-blue);
+  padding: 50px 0px 70px 0px;
+}
+
+.technology .text {
+  padding-right: 10rem;
+  font-size: 18px !important;
+}
+
+.technology-icons > .row {
+  text-align: center;
+  margin: auto;
+}
+
+.technology-icons > .row:nth-child(2) {
+  padding: 30px 0px;
+}
+
+.technology-icon {
+  width: 80px;
+  color: transparent;
+}
+
+.container-fluid.case-studies {
+  background-color: white;
+  padding: 70px, 0px 70px 0px;
+  margin-top: -10px;
+}
+
+.case-studies {
+  color: var(--color-mid-gray);
+  text-align: center;
+}
+
+.case-studies h6 {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.case-studies-icon {
+  width: 100px;
+  margin-bottom: 100px;
+}
+
+.case-studies-icon:last-child {
+  width: 150px;
+}
+
+.case-studies .row {
+  margin-bottom: -70px;
+}
+
+.case-studies .card {
+  background-color: var(--color-light-blue);
+
+  text-align: left;
+  padding-right: 12rem !important;
+  padding-left: 1.5rem !important;
+  position: relative;
+}
+
+.case-studies .card-title {
+  color: white;
+}
+
+.case-studies .card button {
+  border: solid 1px white;
+  color: white !important;
+}
+
+.case-studies .card > img {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 13em;
+  margin-right: 10px;
+}
+
+footer > .container {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+footer h6 {
+  font-size: 10px;
+}
+
+footer p {
+  margin-right: 10rem;
+}
+
+footer i {
+  color: var(--color-mid-gray);
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .background-image img {
+    width: 90vw;
+  }
+
+  #hire-us {
+    margin-left: 10px;
+  }
+  
+}
