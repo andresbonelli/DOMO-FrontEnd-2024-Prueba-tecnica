@@ -9,9 +9,17 @@
 
 .body {
   background-color: var(--color-dark-blue);
-  color: white !important ;
+  color: white !important;
 }
 
+@keyframes backgroundFade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .background-image img {
   margin: 0;
   padding: 0;
@@ -20,17 +28,16 @@
   right: 0;
   max-width: 667px;
   z-index: -1;
+  animation: backgroundFade 1.5s ease-out forwards;
 }
 
 .container {
-  
   padding: 0 7vw !important;
 }
 
 .navbar {
   height: 100px;
   position: relative;
-  
 }
 
 .navbar-nav > *:not(:last-child) {
@@ -224,8 +231,6 @@ footer i {
 }
 
 @media (max-width: 768px) {
-
-
   .background-image img {
     width: 90vw;
   }
